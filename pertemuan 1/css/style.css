@@ -1,0 +1,25 @@
+body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: azure;
+    }
+
+    p{
+        color:#5b6981;
+        margin : 5px 0px 20px 0px;
+        /* margin-top:0px;
+        margin-bottom: 0px; */
+    }
+
+    .tombol{
+        background-color: green;
+        padding:10px;
+        color:beige;
+        border : 1px solid greenyellow;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    .tombol:hover{
+        background-color: greenyellow;
+        color:green
+    }
