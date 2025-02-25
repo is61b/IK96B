@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="">
+        <p>Nama : <input type="text" maxlength="50" size="20"  required></p>
+        <p>Nilai : <input type="number"  disabled></p>
+        <p>Password : <input type="password" placeholder="Masukkan Password"></p>
+        <p>Warna : <input type="color"></p>
+        <p>Tanggal : <input type="date"></p>
+        <p>Alamat : <textarea rows="5" cols="100"></textarea></p>
+        <p>Foto : <input type="file" accept="audio/*"></p>
+        <p><button type="submit">Proses</button> <button type="reset">Kosongkan Form</button></p>
+    </form> -->
+
+    
+    <form action="">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" maxlength="50" size="20"  required></td>
+            </tr>
+
+            <tr>
+                <td>Nilai</td>
+                <td><input type="number" maxlength="50" size="20"  required></td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="" id=""></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date" size="20"  required></td>
+            </tr>
+
+            <tr>
+                <td>Jurusan</td>
+                <td>
+                    <select multiple>
+                        <option>-Pilih Jurusan-</option>
+
+                        <optgroup label="Technology">
+                        <option selected>Informatika Komputer</option>
+                        </optgroup>
+
+                        <optgroup label="Business">
+                        <option>Sekretaris</option>
+                        <option>Manajemen Perkantoran</option>
+                        <option>Digital Bisnis Komunikasi</option>
+                        </optgroup>
+
+                        <optgroup label="Finance">
+                        <option>Komputer Akuntansi</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" checked name="jk" id="lk"> <label for="lk">Laki-laki</label>
+                    <input type="radio" name="jk" id="pr"> <label for="pr">Perempuan</label>
+                </td>
+            </tr>
+            
+            
+        </table>
+        <br>
+        <fieldset>
+            <legend>Minat dan Bakat</legend>
+            <p><input type="checkbox" id="1"> <label for="1">Olahraga</label></p>
+            <p><input type="checkbox" id="2"> <label for="2">Art/Seni</label></p>
+            <p><input type="checkbox" id="3"> <label for="3">Photography</label></p>
+            <p><input type="checkbox" id="4"> <label for="4">Communication</label></p>
+            <p><input type="checkbox"> <input type="text" placeholder="Tulis Sendiri...."></p>
+        </fieldset>
+
+        <table>
+            <tr>
+                <td></td>
+                <td><button type="submit">Proses</button> <button type="reset">Kosongkan Form</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
