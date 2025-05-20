@@ -1,0 +1,1 @@
+document.getElementById('tampil').innerHTML = "Hello World";
