@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function di Javascript</title>
+</head>
+<body>
+    <input type="text" id="nama" placeholder="Masukkan Nama">
+    <button type="button" ondblclick="sapa()" onclick="sapa2()">PROSES</button>
+    <hr>
+    <span id="hasil"></span>
+    <hr>
+
+    <select id="pilihan">
+        <option value="beige">Beige</option>
+        <option value="aqua">Aqua</option>
+        <option value="red">Merah</option>
+    </select>
+    <button type="button" onclick="gantibg()">Ganti Background</button>
+
+    <script>
+        function gantibg(){
+            let warna = document.getElementById('pilihan').value;
+
+            document.body.style.backgroundColor = warna;
+        }
+        function sapa() {
+            let nama = document.getElementById('nama').value;
+            document.getElementById('hasil').innerHTML = "Halo "+nama;
+        }
+
+        function sapa2(){
+            let nama = document.getElementById('nama').value;
+            if(nama == ""){
+                document.getElementById('hasil').innerHTML = "masukkan terlebih dahulu nama anda";
+            }else{
+                document.getElementById('hasil').innerHTML = "Selamat Siang ,"+nama;
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

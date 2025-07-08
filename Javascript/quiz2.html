@@ -24,7 +24,25 @@
         <button type="submit">PROSES</button>
     </form>
     <hr>
-    <h1>jumlah ml</h1>
-    <h4>setara dengan berapa gelas</h4>
+    <h1 id="ml"></h1>
+    <h4 id="gelas"></h4>
+
+    <script>
+        document.getElementById('kalkulator').addEventListener('submit',function (event) {
+            event.preventDefault();
+
+            // 1. mengambil isi dari input
+            let weight = document.getElementById('berat').value;
+            let activity = document.getElementById('aktivitas').value;
+
+            // 2. memproses jumlah ml dan jumlah gelas
+            let kebutuhanAir = weight * activity * 30;
+            let gelas = kebutuhanAir / 250;
+
+            // 3. menampilkan kembali hasil proses ke html
+            document.getElementById('ml').innerHTML = kebutuhanAir.toFixed(0)+" ml";
+            document.getElementById('gelas').innerHTML = "setara dengan "+gelas.toFixed(0)+" gelas";
+        });
+    </script>
 </body>
 </html>
